@@ -1,0 +1,95 @@
+/* Define keyframes for jump animation */
+@keyframes jump {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px); /* Jump up */
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Apply jump animation to the container */
+.container {
+    animation: jump 1s ease infinite; /* Apply jump animation infinitely with a duration of 1 second */
+}
+
+/* Style for the page body */
+body {
+    background-image: url("BlackHead.jpg");
+    background-position: center;
+    margin-top: 5%;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/* Style for the table */
+table {
+    border-collapse: collapse;
+    width: 80%;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(255, 0, 0, 0.5);
+    border: 1px solid transparent;
+}
+
+/* Style for h1 */
+h1 {
+    text-align: center;
+    color: white;
+    margin-top: 20px; /* Add margin top for h1 */
+}
+
+/* Style for table header cells */
+th {
+    color: white;
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid transparent;
+}
+
+/* Style for table data cells */
+td {
+    color: white;
+    padding: 8px;
+    border-bottom: 1px solid transparent;
+}
+
+/* Style for the audio controls */
+audio::-webkit-media-controls-panel {
+    background-color: lightyellow;
+    transition: background-color 0.3s ease;
+}
+
+/* Change background color on hover */
+audio::-webkit-media-controls-panel:hover {
+    background-color: yellow;
+}
+
+/* Define keyframes for color-changing shadow animation */
+@keyframes shadowColorChange {
+    0% {
+        box-shadow: 0 24px 28px rgba(255, 0, 0, 0.5);
+    }
+    20% {
+        box-shadow: 0 24px 28px rgba(0, 0, 255, 0.5);
+    }
+    40% {
+        box-shadow: 0 24px 28px rgba(255, 192, 203, 0.5);
+    }
+    60% {
+        box-shadow: 0 24px 28px rgba(255, 255, 0, 0.5);
+    }
+    80% {
+        box-shadow: 0 24px 28px rgba(0, 128, 0, 0.5);
+    }
+    100% {
+        box-shadow: 0 24px 28px rgba(255, 0, 0, 0.5);
+    }
+}
+
+/* Apply color-changing shadow animation to the table */
+table {
+    animation: shadowColorChange 5s infinite;
+}

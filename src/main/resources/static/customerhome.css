@@ -1,0 +1,154 @@
+/* Common styles for both premium and non-premium sections */
+/* Style for the table */
+table {
+	border-collapse: collapse;
+	width: 80%; /* Adjust as needed */
+	margin: 20px auto; /* Center the table */
+	box-shadow: 0 4px 8px rgba(255, 0, 0, 0.5); /* Add red shadow effect */
+	border: 1px solid transparent; 
+	
+}
+
+/* Style for table header cells */
+th {
+	
+	color: black;
+	padding: 8px;
+	text-align: left;
+	border: 1px solid transparent; 
+}
+
+/* Style for table data cells */
+td {
+	border: 1px solid #ddd;
+	padding: 8px;
+	color: black;
+	border: 1px solid transparent; 
+}
+
+/* Style for the audio controls */
+audio::-webkit-media-controls-panel {
+	background-color: lightyellow; /* Default background color */
+	transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+/* Change background color on hover */
+audio::-webkit-media-controls-panel:hover {
+	background-color: yellow; /* Change background color on hover */
+}
+
+/* Style for the page body */
+body {
+	margin: 0; /* Remove default margin */
+}
+
+/* Style for non-premium section */
+.non-premium {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	margin: 0;
+	background-image: url("yellowHeadphone.jpg");
+	background-size: cover; /* Cover the entire background */
+	background-position: center; /* Center the background image */
+	background-attachment: fixed; /* Keep the background image fixed */
+	background-repeat: no-repeat;
+	/* Prevent the background from repeating */
+}
+
+
+
+/* Style for buttons in non-premium section */
+.non-premium input[type="submit"] {
+	background-color: #007bff; /* Blue background */
+	color: white;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	cursor: pointer;
+	margin: 15px;
+	
+}
+/* Style for the premium section */
+.premium {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	margin: 0;
+	background-image: url("Gelly.jpg");
+	background-size: cover; /* Cover the entire background */
+	background-position: center; /* Center the background image */
+	background-attachment: fixed; /* Keep the background image fixed */
+	background-repeat: no-repeat;
+	/* Prevent the background from repeating */
+}
+
+/* Style for non-premium button hover */
+.non-premium input[type="submit"]:hover {
+	background-color: red; /* Red background on hover */
+}
+
+/* Style for the premium h1 tag */
+.premium h1 {
+    position: fixed; /* Fix the position */
+    top: 15%; /* Position from the top */
+    left: 40%; /* Position from the left */
+    text-align: center; /* Center the text horizontally */
+    text-shadow: 2px 2px 4px #ADD8E6; /* Apply light blue shadow */
+    color: black; /* Optional: Change text color */
+    animation: jump 2.5s ease infinite; /* Apply the jump animation infinitely */
+}
+
+/* Define keyframes for the jump animation */
+@keyframes jump {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px); /* Jump up */
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+/* Style for the table */
+table {
+	border-collapse: collapse;
+	width: 80%; /* Adjust as needed */
+	
+	position: fixed; /* Fix the table position */
+	top: 50%; /* Position from the top */
+	left: 50%; /* Position from the left */
+	transform: translate(-50%, -50%);
+	/* Center the table horizontally and vertically */
+}
+
+
+/* Define keyframes for color-changing shadow animation */
+@keyframes shadowColorChange {
+   
+    20% {
+        box-shadow: 0 24px 28px rgba(255, 0, 0, 0.5); /* Red shadow color at 20% */
+    }
+    40% {
+        box-shadow: 0 24px 28px rgba(255, 192, 203, 0.5); /* Pink shadow color at 40% */
+    }
+    60% {
+        box-shadow: 0 24px 28px rgba(255, 255, 0, 0.5); /* Yellow shadow color at 60% */
+    }
+    80% {
+        box-shadow: 0 24px 28px rgba(0, 128, 0, 0.5); /* Green shadow color at 80% */
+    }
+    100% {
+        box-shadow: 0 24px 24px rgba(0, 1, 255, 2.9); /* Back to blue shadow color at 100% */
+    }
+}
+
+/* Apply color-changing shadow animation to the table */
+table {
+    animation: shadowColorChange 5s infinite; /* Apply color-changing animation for shadow */
+}

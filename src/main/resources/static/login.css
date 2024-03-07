@@ -1,0 +1,122 @@
+/* Reset default margin and padding */
+body, html {
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8; /* Background color for the whole page */
+    background-image: url("Gelly.jpg");
+    background-size: cover; /* Cover the entire background */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the background from repeating */
+    height: 100%; /* Ensure body and html elements take full height */
+    background-attachment: fixed; /* Keep the background image fixed */
+}
+
+/* Form container styles */
+form {
+    margin: 50px auto 0; /* Center the form horizontally and set top margin */
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.7); /* Transparent white background color */
+    padding: 20px; /* Padding for the form container */
+    border-radius: 2px 60px; /* Border radius for the form container */
+    box-shadow: 0 0 10px rgba(255, 105, 180, 0.5); /* Pink box shadow */
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Arrange children vertically */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    height: 56%; /* Full viewport height */
+    width: 37%;
+    animation: moveRound 6s linear infinite; /* Circular animation */
+    animation: shadowColorChange 10s infinite; /* Color-changing animation for shadow */
+}
+
+/* Define keyframes for color-changing shadow animation */
+@keyframes shadowColorChange {
+    0% {
+        box-shadow: 0 0 70px rgba(255, 0, 0, 20.5); /* Red shadow color at 0% */
+    }
+    20% {
+        box-shadow: 0 0 70px rgba(0, 0, 255, 20.5); /* Blue shadow color at 20% */
+    }
+    40% {
+        box-shadow: 0 0 70px rgba(255, 192, 203, 20.5); /* Pink shadow color at 40% */
+    }
+    60% {
+        box-shadow: 0 0 70px rgba(255, 255, 0, 20.5); /* Yellow shadow color at 60% */
+    }
+    80% {
+        box-shadow: 0 0 70px rgba(0, 128, 0, 20.5); /* Green shadow color at 80% */
+    }
+    100% {
+        box-shadow: 0 0 70px rgba(255, 0, 0, 20.5); /* Back to red shadow color at 100% */
+    }
+}
+
+/* Heading styles */
+h2 {
+    margin-bottom: 20px; /* Margin bottom for heading */
+    color: #333; /* Text color for heading */
+    font-size: 30px; /* Font size for heading */
+    text-align: center; /* Center the headline */
+    animation: animate_bounce 2s infinite; /* Apply bouncing animation infinitely with a duration of 2 seconds */
+}
+
+/* Define keyframes for bouncing animation */
+@keyframes animate_bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0); /* No movement at these points */
+    }
+    40% {
+        transform: translateY(-20px); /* Bounce up */
+    }
+    60% {
+        transform: translateY(-10px); /* Bounce down slightly */
+    }
+}
+
+/* Input field styles */
+input[type="email"], input[type="password"] {
+    width: calc(100% - 20px); /* Adjusted width */
+    padding: 10px; /* Padding for input fields */
+    margin-bottom: 10px; /* Margin bottom for input fields */
+    border: 1px solid #ddd; /* Border for input fields */
+    border-radius: 4px; /* Border radius for input fields */
+    box-sizing: border-box; /* Box-sizing for input fields */
+    font-size: 16px; /* Font size for input fields */
+    color: #555; /* Text color for input fields */
+    transition: border-color 0.3s ease; /* Transition effect for border color */
+}
+
+/* Input field styles on focus */
+input[type="email"]:focus, input[type="password"]:focus {
+    border-color: #ff69b4; /* Pink border color on focus */
+     border-radius: 6px;
+}
+
+/* Button styles */
+input[type="submit"] {
+    width: calc(100% - 20px); /* Adjusted width */
+    padding: 10px; /* Padding for button */
+    background-color:pink;
+    height:46px;
+     
+    border-radius: 6px;
+    color: white;
+    font-weight: inherit;
+     transition: background-color 0.5s; /* Transition duration set to 0.5 seconds */
+}
+/* Button hover styles */
+/* Button styles */
+input[type="submit"] {
+    width: calc(100% - 20px); /* Adjusted width */
+    padding: 10px; /* Padding for button */
+    background-color:#fca3db;
+    border-radius: 6px; /* Border radius for button */
+    border: 1px solid #ffc4ff; /* Border color same as button background */
+    font-weight: bold; /* Make the text bold */
+    transition: background-color 0.5s; /* Transition duration set to 0.5 seconds */
+}
+
+/* Button hover styles */
+input[type="submit"]:hover {
+    background-color: pink; /* Change background color to pink on hover */
+}

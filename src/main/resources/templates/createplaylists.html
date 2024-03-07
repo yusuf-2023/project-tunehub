@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+
+<link rel="stylesheet" type="text/css" href="createplaylists.css">
+<body>
+
+<form action="addplaylist" method="post">
+    <label>Playlist Name</label> 
+    <input type="text" name="name" placeholder="playlist name">
+    <br>
+    
+    <!-- Check if songs is not null before iterating -->
+    <th:block th:if="${songs != null}">
+        <div th:each="song : ${songs}">
+            <input type="checkbox" th:name="songs" th:value="${song.id}">
+            <label th:text="${song.name}"></label>
+        </div>
+    </th:block>
+    <!-- Handle the case where songs is null -->
+    <th:block th:if="${songs == null}">
+        <p>No songs available</p>
+    </th:block>
+    
+    <input type="submit" value="ADD PLAYLIST">
+</form>
+
+</body>
+</html>
+
+

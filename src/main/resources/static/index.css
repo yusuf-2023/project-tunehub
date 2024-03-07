@@ -1,0 +1,106 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url("Gelly.jpg");
+    background-size: cover; /* Cover the entire background */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the background from repeating */
+}
+
+.container {
+    text-align: center;
+}
+
+button {
+    position: relative; /* Add position relative to enable absolute positioning of overlay */
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px;
+    overflow: hidden; /* Hide overflow to clip overlay */
+    transition: background-color 0.3s; /* Smooth transition for background color change */
+}
+
+button:hover {
+    background-color: red; /* Change background color to red on hover */
+}
+
+/* Form name */
+h2 {
+    margin-bottom: 50px; /* Margin bottom for heading */
+    margin-right: 60px; /* Margin left for heading */
+    color: #333; /* Text color for heading */
+    font-size: 50px; /* Reduced font size */
+    text-align: center; /* Center the headline */
+    animation: animate_heartbeat 7s infinite, animate_shadow_h2 10s infinite; /* Apply heartbeat animation infinitely with a duration of 2 seconds */
+}
+
+/* Define keyframes for heartbeat animation */
+@keyframes animate_heartbeat {
+    0% {
+        transform: scale(1); /* Normal size at start */
+    }
+    25% {
+        transform: scale(1.1); /* Scale up */
+    }
+    50% {
+        transform: scale(0.9); /* Scale down */
+    }
+    75% {
+        transform: scale(1.1); /* Scale up again */
+    }
+    100% {
+        transform: scale(1); /* Back to normal size */
+    }
+}
+
+/* Keyframes for color-changing shadow for h2 */
+@keyframes animate_shadow_h2 {
+    0% {
+        text-shadow: 5px 10px 30px rgba(255, 0, 0, 0.5); /* Red shadow color at 0% */
+    }
+    20% {
+        text-shadow: 10px 10px 10px rgba(0, 0, 255, 0.5); /* Blue shadow color at 20% */
+    }
+    40% {
+        text-shadow: 10px 10px 10px rgba(255, 192, 203, 0.5); /* Pink shadow color at 40% */
+    }
+    60% {
+        text-shadow: 10px 10px 10px rgba(255, 255, 0, 0.5); /* Yellow shadow color at 60% */
+    }
+    80% {
+        text-shadow: 10px 10px 10px rgba(0, 128, 0, 0.5); /* Green shadow color at 80% */
+    }
+    100% {
+        text-shadow: 5px 10px 30px rgba(255, 0, 0, 0.5); /* Back to red shadow color at 100% */
+    }
+}
+/* Keyframes for the slide animation */
+@keyframes slideFromTopLeft {
+    0% {
+        transform: translate(-100%, -100%); /* Start position: top left corner */
+        opacity: 0; /* Start with opacity 0 */
+    }
+    
+    100% {
+        transform: translate(5%, 50%); /* End position: bottom right corner */
+        opacity: 1; /* End with full opacity */
+    }
+}
+
+/* Apply animation to h3 */
+h3 {
+    position: fixed; /* Fix the position */
+    top: 0; /* Position from the top */
+    left: 0; /* Position from the left */
+    margin: 20px; /* Margin for spacing */
+    color: black; /* Text color for heading */
+    font-size: 40px; /* Font size */
+    animation: slideFromTopLeft 4s ease forwards; /* Apply slideFromTopLeft animation */
+}

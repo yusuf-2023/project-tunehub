@@ -1,0 +1,148 @@
+/* Reset default margin and padding */
+body, html {
+    margin: 0;
+    padding: 0;
+    background-image: url("Gelly.jpg");
+    background-size: cover; /* Cover the entire background */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat;
+    height: 100%; /* Ensure body and html elements take full height */
+    background-attachment: fixed; /* Ensure background image doesn't scroll */
+}
+
+/* Center the form horizontally and vertically */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto; /* Adjusted height */
+    background-color: #f8f8f3; /* Background color for the whole page */
+}
+
+/* Form container styles */
+form {
+    max-width: 320px; /* Reduced maximum width */
+    height:500px;
+    width: 100%;
+    padding: 8px; /* Reduced padding */
+    background-color: rgba(255, 255, 255, 0.7);
+    /* Transparent white background color */
+    border-radius :0px 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 255, 0.5), /* Blue shadow */
+                0 0 5px rgba(255, 0, 0, 0.5); /* Red shadow */
+    text-align: left;
+    margin-top: 5%; animation: shadowColorChange 10s infinite; /* Color-changing animation for shadow */
+}
+
+/* Define keyframes for color-changing shadow animation */
+@keyframes shadowColorChange {
+    0% {
+        box-shadow: 0 0 20px rgba(255, 0, 0, 20.5); /* Red shadow color at 0% */
+    }
+    20% {
+        box-shadow: 0 0 20px rgba(0, 0, 255, 20.5); /* Blue shadow color at 20% */
+    }
+    40% {
+        box-shadow: 0 0 20px rgba(255, 192, 203, 20.5); /* Pink shadow color at 40% */
+    }
+    60% {
+        box-shadow: 0 0 20px rgba(255, 255, 0, 20.5); /* Yellow shadow color at 60% */
+    }
+    80% {
+        box-shadow: 0 0 20px rgba(0, 128, 0, 20.5); /* Green shadow color at 80% */
+    }
+    100% {
+        box-shadow: 0 0 20px rgba(255, 0, 0, 20.5); /* Back to red shadow color at 100% */
+    }
+}
+/* Form name */
+h1 {
+    margin-bottom: 10px; /* Margin bottom for heading */
+    color: #333; /* Text color for heading */
+   /* font-size: 20px;  Reduced font size */
+    text-align: center; /* Center the headline */
+    animation: animate_heartbeat 2s infinite; /* Apply heartbeat animation infinitely with a duration of 2 seconds */
+}
+
+/* Define keyframes for heartbeat animation */
+@keyframes animate_heartbeat {
+    0% {
+        transform: scale(1); /* Normal size at start */
+    }
+    25% {
+        transform: scale(1.1); /* Scale up */
+    }
+    50% {
+        transform: scale(0.9); /* Scale down */
+    }
+    75% {
+        transform: scale(1.1); /* Scale up again */
+    }
+    100% {
+        transform: scale(1); /* Back to normal size */
+    }
+}
+/* Label styles */
+label {
+    display: inline-block;
+    margin-bottom: 3px; /* Reduced margin bottom */
+    color: #333;
+    font-size: 15px; /* Further reduced font size */
+    font-weight: bold;
+    animation: leste 0.5s ease; /* Apply the leste animation to labels */
+}
+
+/* Input field styles */
+input[type="text"],
+input[type="password"],
+textarea {
+   width:100%;
+   height:6%;
+   
+    padding: 5px; /* Rrgb(96, 219, 236) 219, 236)padding */
+    margin-bottom: 4px; /* Further reduced margin bottom */
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 10px; /* Further reduced font size */
+    color: #555;
+  
+    animation: leste 0.5s ease; /* Apply the leste animation to input fields */
+}
+
+/* Radio button styles */
+input[type="radio"] {
+    margin-right: 12px; /* Reduced margin right */
+    animation: leste 0.5s ease; /* Apply the leste animation to radio buttons */
+}
+
+/* Button styles */
+button[type="submit"] {
+    width: 100%;
+    padding: 10px; /* Further reduced padding */
+    background-color:   rgb(43, 148, 174);
+    color: #fff;
+    border: none;
+   border-radius :0px 40px;
+    cursor: pointer;
+    font-size: 12px; /* Further reduced font size */
+    
+    animation: leste 0.5s ease; /* Apply the leste animation to submit button */
+}
+
+button[type="submit"]:hover {
+    background-color: #cdc7de;
+    
+}
+
+/* Define keyframes for leste animation */
+@keyframes leste {
+    0% {
+        transform: translateX(-100%);
+        opacity: 2;
+    }
+    100% {
+        transform: translateX(20);
+        opacity: 1;
+    }
+}

@@ -1,0 +1,83 @@
+/* newsong.css */
+
+/* Reset default margin and padding */
+body, html {
+    margin: 0;
+    padding: 0;
+    background-color: rgba(255, 255, 255, 0.8); /* Transparent white background color */
+     background-image: url("Gelly.jpg");
+    background-size: cover; /* Cover the entire background */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat;
+    /* Prevent the background from repeating */
+}
+
+/* Form container styles */
+form {
+    max-width: 250px; /* Adjusted maximum width */
+    width: 100%;
+    padding: 15px; /* Adjusted padding */
+    background-color: rgba(255, 255, 255, 0.5); /* Transparent white background color */
+    border-radius: 8px;
+    text-align: left;
+    margin: 50px auto; /* Center the form on the page */
+    animation: shadow-animation 2s infinite alternate; /* Apply shadow animation */
+}
+
+/* Keyframe animation for changing box shadow color */
+@keyframes shadow-animation {
+    0% {
+        box-shadow: 0 0 50px rgba(255, 0, 0, 0.5); /* Red deep shadow */
+    }
+    50% {
+        box-shadow: 0 0 20px rgba(0, 0, 255, 0.5); /* Blue shadow */
+    }
+    100% {
+        box-shadow: 0 0 30px rgba(0, 255, 0, 0.5); /* Green shadow */
+    }
+}
+
+
+/* Label styles */
+label {
+    display: block;
+    margin-bottom: 3px; /* Reduced margin bottom for labels */
+    color: #333; /* Text color for labels */
+    font-weight: bold; /* Make label text bold */
+}
+
+/* Input field styles */
+input[type="text"] {
+    width: calc(100% - 10px); /* Adjusted width */
+    padding: 5px; /* Adjusted padding */
+    margin-bottom: 8px; /* Reduced margin bottom for inputs */
+    border: 1px solid #ddd; /* Border for inputs */
+    border-radius: 4px; /* Border radius for inputs */
+    box-sizing: border-box; /* Box sizing for inputs */
+    box-shadow: 0 0 10px rgba(0, 0, 255, 0.5); /* Blue box shadow */
+    font-size: 12px; /* Reduced font size for inputs */
+}
+
+/* Button styles */
+input[type="submit"] {
+    width: 100%;
+    padding: 8px; /* Adjusted padding */
+    background-color: #007bff; /* Button background color */
+    color: #fff; /* Text color for button */
+    border: none; /* No border for button */
+    border-radius: 4px; /* Border radius for button */
+    cursor: pointer; /* Cursor style for button */
+    font-size: 14px; /* Font size for button text */
+    transition: background-color 0.3s ease;
+    /* Transition effect for button */
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3; /* Button background color on hover */
+}
+
+/* Change color of h2 and center it */
+h2 {
+    color: black;
+    text-align: center;
+}

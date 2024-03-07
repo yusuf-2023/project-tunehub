@@ -1,0 +1,63 @@
+/* displayplaylist.css */
+
+/* Style for the page body */
+body {
+	background-image: url("Gelly.jpg"); /* Sets the background image */
+	background-size: cover; /* Cover the entire background */
+	background-position: center; /* Center the background image */
+	background-attachment: fixed; /* Fix the background position */
+	background-repeat: no-repeat;
+	/* Prevent background image from repeating */
+}
+
+/* Style for the table */
+table {
+	border-collapse: collapse; /* Collapses the table borders */ width : 60%;
+	/* Sets the width of the table */
+	margin: 20px auto; /* Centers the table horizontally */
+	box-shadow: 0 4px 8px rgba(255, 0, 0, 0.5);
+	width: 60%; /* Adds a red shadow effect */
+	border: 1px solid transparent; 
+}
+
+h1 {
+	text-align: center; /* Center-aligns the text */
+}
+
+/* Style for table header cells */
+th {
+	background-color: black;
+	/* Sets the background color of the header cells */
+	color: white; /* Sets the text color of the header cells */
+	padding: 8px; /* Adds padding to the header cells */
+	text-align: left; /* Left-aligns the text within the header cells */
+}
+
+/* Style for table data cells */
+td {
+	border: 1px solid #ddd; /* Sets the border of the data cells */
+	padding: 8px; /* Adds padding to the data cells */
+}
+
+/* Style for the audio controls */
+audio::-webkit-media-controls-panel {
+	background-color: lightyellow;
+	/* Sets the background color of the audio controls */
+	transition: background-color 0.3s ease;
+	/* Adds a smooth transition effect */
+}
+
+/* Change background color on hover */
+audio::-webkit-media-controls-panel:hover {
+	background-color: yellow;
+	/* Sets the background color of the audio controls on hover */
+}
+
+/* Style for the fixed form */
+form {
+	position: fixed; /* Fixes the form position */
+	top: 50%; /* Positions the form 50% from the top */
+	left: 50%; /* Positions the form 50% from the left */
+	transform: translate(-50%, -50%);
+	/* Centers the form horizontally and vertically */
+}
